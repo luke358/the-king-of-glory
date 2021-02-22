@@ -37,7 +37,7 @@
         <el-form-item label="用户名">
           <el-input v-model="user.username"></el-input>
         </el-form-item>
-        <el-form-item v-if="!this.user._id" label="权限等级">
+        <el-form-item label="权限等级">
           <el-input v-model="user.level"></el-input>
         </el-form-item>
         <el-form-item label="密码">
@@ -90,7 +90,7 @@ export default {
       this.dialogVisible = true
     },
     dialogClose() {
-      this.model = {}
+      this.user = {}
     },
     async handleUser(){
     if (!this.user._id) {

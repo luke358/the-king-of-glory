@@ -5,7 +5,7 @@
       <h2>
         <span>王者荣耀后台管理系统</span>
       </h2>
-      <el-button type="primary" size="small" @click="loginOut">退出</el-button>
+      <el-button type="primary" size="small" @click="logout">退出</el-button>
     </el-header>
 
     <el-container>
@@ -89,7 +89,7 @@
             <!--用户管理二级菜单 -->
             <el-menu-item-group>
               <template slot="title">用户</template>
-              <el-menu-item index="/admin_user/list">用户列表</el-menu-item>
+              <el-menu-item index="/admin_users/list">用户列表</el-menu-item>
             </el-menu-item-group>
           </el-submenu>
         </el-menu>
@@ -131,9 +131,9 @@ export default {
           return '编辑英雄'
         }
       } else {
-        if (this.$route.path === '/article/create') {
+        if (this.$route.path === '/articles/create') {
           return '添加文章'
-        } else if (this.$route.path.indexOf('/article/edit') !== -1) {
+        } else if (this.$route.path.indexOf('/articles/edit') !== -1) {
           return '编辑文章'
         }
       }

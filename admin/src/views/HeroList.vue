@@ -67,10 +67,14 @@ export default {
       currentPage: 1,
       totalCount: 1,
       pageSizes: [2, 5, 10, 15],
-      PageSize: 5
+      PageSize: 5,
+      heroQuery: ''
     };
   },
   methods: {
+    searchHero(){
+
+    },
     async fetch() {
       const res = await this.$http.get("rest/heroes");
       this.tableData = res.data;

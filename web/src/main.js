@@ -19,7 +19,8 @@ Vue.component("m-list-card", ListCard);
 
 import axios from "axios";
 Vue.prototype.$http = axios.create({
-  baseURL: "http://106.14.145.147/web/api"
+  // baseURL: "http://106.14.145.147/web/api"
+  baseURL: "http://localhost:3001/web/api"
 });
 
 new Vue({

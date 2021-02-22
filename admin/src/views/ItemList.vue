@@ -3,7 +3,9 @@
     <h1>物品列表</h1>
     <el-card>
       <el-button type="primary" icon="el-icon-plus" @click="dialogVisible = true">添加物品</el-button>
-      <el-table :data="items">
+      <el-table  :data="
+          items.slice((currentPage - 1) * PageSize, currentPage * PageSize)
+        ">
         <el-table-column prop="_id" label="ID" width="240"> </el-table-column>
 
         <el-table-column prop="name" label="物品名称"> </el-table-column>
@@ -27,6 +29,18 @@
           </template>
         </el-table-column>
       </el-table>
+      <div class="tabListPage">
+        <el-pagination
+          @size-change="handleSizeChange"
+          @current-change="handleCurrentChange"
+          :current-page="currentPage"
+          :page-sizes="pageSizes"
+          :page-size="PageSize"
+          layout="total, sizes, prev, pager, next, jumper"
+          :total="totalCount"
+        >
+        </el-pagination>
+      </div>
     </el-card>
     
     <!-- 对话框 -->
@@ -82,12 +96,17 @@ export default {
       dialogVisible: false,
        // 添加表单数据
       formData: {},
+      currentPage: 1,
+      totalCount: 1,
+      pageSizes: [2, 5, 10, 15],
+      PageSize: 5,
     };
   },
   methods: {
     async fetch() {
       const res = await this.$http.get("rest/items");
       this.items = res.data;
+      this.totalCount = res.data.length;
     },
     async remove(row) {
       this.$confirm(`确定删除"${row.name}"?`, "提示", {
@@ -130,6 +149,17 @@ export default {
       res.data.star = Number(res.data.star)
       this.formData = res.data
       this.dialogVisible = true
+    },
+    handleSizeChange(val) {
+      // 改变每页显示的条数
+      this.PageSize = val;
+      // 注意：在改变每页显示的条数时，要将页码显示到第一页
+      this.currentPage = 1;
+    },
+    // 显示第几页
+    handleCurrentChange(val) {
+      // 改变默认的页数
+      this.currentPage = val;
     },
   },
 

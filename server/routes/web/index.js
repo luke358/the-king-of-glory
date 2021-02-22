@@ -111,19 +111,14 @@ module.exports = (app) => {
 				name: "热门",
 				heroes: [
 					{
+						name: "鲁班七号",
+						avatar:
+							"https://game.gtimg.cn/images/yxzj/img201606/heroimg/112/112.jpg",
+					},
+					{
 						name: "后羿",
 						avatar:
 							"https://game.gtimg.cn/images/yxzj/img201606/heroimg/169/169.jpg",
-					},
-					{
-						name: "孙悟空",
-						avatar:
-							"https://game.gtimg.cn/images/yxzj/img201606/heroimg/167/167.jpg",
-					},
-					{
-						name: "铠",
-						avatar:
-							"https://game.gtimg.cn/images/yxzj/img201606/heroimg/193/193.jpg",
 					},
 					{
 						name: "安琪拉",
@@ -131,14 +126,19 @@ module.exports = (app) => {
 							"https://game.gtimg.cn/images/yxzj/img201606/heroimg/142/142.jpg",
 					},
 					{
+						name: "孙悟空",
+						avatar:
+							"https://game.gtimg.cn/images/yxzj/img201606/heroimg/167/167.jpg",
+					},
+					{
+						name: "吕布",
+						avatar:
+							"https://game.gtimg.cn/images/yxzj/img201606/heroimg/123/123.jpg",
+					},
+					{
 						name: "亚瑟",
 						avatar:
 							"https://game.gtimg.cn/images/yxzj/img201606/heroimg/166/166.jpg",
-					},
-					{
-						name: "鲁班七号",
-						avatar:
-							"https://game.gtimg.cn/images/yxzj/img201606/heroimg/112/112.jpg",
 					},
 					{
 						name: "妲己",
@@ -146,19 +146,19 @@ module.exports = (app) => {
 							"https://game.gtimg.cn/images/yxzj/img201606/heroimg/109/109.jpg",
 					},
 					{
-						name: "甄姬",
+						name: "铠",
 						avatar:
-							"https://game.gtimg.cn/images/yxzj/img201606/heroimg/127/127.jpg",
+							"https://game.gtimg.cn/images/yxzj/img201606/heroimg/193/193.jpg",
+					},
+					{
+						name: "虞姬",
+						avatar:
+							"https://game.gtimg.cn/images/yxzj/img201606/heroimg/174/174.jpg",
 					},
 					{
 						name: "韩信",
 						avatar:
 							"https://game.gtimg.cn/images/yxzj/img201606/heroimg/150/150.jpg",
-					},
-					{
-						name: "伽罗",
-						avatar:
-							"https://game.gtimg.cn/images/yxzj/img201606/heroimg/508/508.jpg",
 					},
 				],
 			},
@@ -256,11 +256,6 @@ module.exports = (app) => {
 							"https://game.gtimg.cn/images/yxzj/img201606/heroimg/170/170.jpg",
 					},
 					{
-						name: "钟馗",
-						avatar:
-							"https://game.gtimg.cn/images/yxzj/img201606/heroimg/175/175.jpg",
-					},
-					{
 						name: "杨戬",
 						avatar:
 							"https://game.gtimg.cn/images/yxzj/img201606/heroimg/178/178.jpg",
@@ -284,6 +279,11 @@ module.exports = (app) => {
 						name: "苏烈",
 						avatar:
 							"https://game.gtimg.cn/images/yxzj/img201606/heroimg/194/194.jpg",
+					},
+					{
+						name: "梦奇",
+						avatar:
+							"https://game.gtimg.cn/images/yxzj/img201606/heroimg/198/198.jpg",
 					},
 					{
 						name: "裴擒虎",
@@ -324,6 +324,21 @@ module.exports = (app) => {
 						name: "马超",
 						avatar:
 							"https://game.gtimg.cn/images/yxzj/img201606/heroimg/518/518.jpg",
+					},
+					{
+						name: "蒙恬",
+						avatar:
+							"https://game.gtimg.cn/images/yxzj/img201606/heroimg/527/527.jpg",
+					},
+					{
+						name: "夏洛特",
+						avatar:
+							"https://game.gtimg.cn/images/yxzj/img201606/heroimg/536/536.jpg",
+					},
+					{
+						name: "司空震",
+						avatar:
+							"https://game.gtimg.cn/images/yxzj/img201606/heroimg/537/537.jpg",
 					},
 				],
 			},
@@ -480,6 +495,11 @@ module.exports = (app) => {
 						avatar:
 							"https://game.gtimg.cn/images/yxzj/img201606/heroimg/523/523.jpg",
 					},
+					{
+						name: "司空震",
+						avatar:
+							"https://game.gtimg.cn/images/yxzj/img201606/heroimg/537/537.jpg",
+					},
 				],
 			},
 			{
@@ -591,6 +611,11 @@ module.exports = (app) => {
 							"https://game.gtimg.cn/images/yxzj/img201606/heroimg/510/510.jpg",
 					},
 					{
+						name: "盾山",
+						avatar:
+							"https://game.gtimg.cn/images/yxzj/img201606/heroimg/509/509.jpg",
+					},
+					{
 						name: "嫦娥",
 						avatar:
 							"https://game.gtimg.cn/images/yxzj/img201606/heroimg/515/515.jpg",
@@ -599,6 +624,16 @@ module.exports = (app) => {
 						name: "猪八戒",
 						avatar:
 							"https://game.gtimg.cn/images/yxzj/img201606/heroimg/511/511.jpg",
+					},
+					{
+						name: "蒙恬",
+						avatar:
+							"https://game.gtimg.cn/images/yxzj/img201606/heroimg/527/527.jpg",
+					},
+					{
+						name: "阿古朵",
+						avatar:
+							"https://game.gtimg.cn/images/yxzj/img201606/heroimg/533/533.jpg",
 					},
 				],
 			},
@@ -700,6 +735,16 @@ module.exports = (app) => {
 						avatar:
 							"https://game.gtimg.cn/images/yxzj/img201606/heroimg/518/518.jpg",
 					},
+					{
+						name: "镜",
+						avatar:
+							"https://game.gtimg.cn/images/yxzj/img201606/heroimg/531/531.jpg",
+					},
+					{
+						name: "澜",
+						avatar:
+							"https://game.gtimg.cn/images/yxzj/img201606/heroimg/528/528.jpg",
+					},
 				],
 			},
 			{
@@ -791,11 +836,6 @@ module.exports = (app) => {
 							"https://game.gtimg.cn/images/yxzj/img201606/heroimg/118/118.jpg",
 					},
 					{
-						name: "姜子牙",
-						avatar:
-							"https://game.gtimg.cn/images/yxzj/img201606/heroimg/148/148.jpg",
-					},
-					{
 						name: "牛魔",
 						avatar:
 							"https://game.gtimg.cn/images/yxzj/img201606/heroimg/168/168.jpg",
@@ -804,6 +844,11 @@ module.exports = (app) => {
 						name: "张飞",
 						avatar:
 							"https://game.gtimg.cn/images/yxzj/img201606/heroimg/171/171.jpg",
+					},
+					{
+						name: "钟馗",
+						avatar:
+							"https://game.gtimg.cn/images/yxzj/img201606/heroimg/175/175.jpg",
 					},
 					{
 						name: "蔡文姬",
@@ -821,6 +866,11 @@ module.exports = (app) => {
 							"https://game.gtimg.cn/images/yxzj/img201606/heroimg/191/191.jpg",
 					},
 					{
+						name: "东皇太一",
+						avatar:
+							"https://game.gtimg.cn/images/yxzj/img201606/heroimg/187/187.jpg",
+					},
+					{
 						name: "鬼谷子",
 						avatar:
 							"https://game.gtimg.cn/images/yxzj/img201606/heroimg/189/189.jpg",
@@ -829,11 +879,6 @@ module.exports = (app) => {
 						name: "明世隐",
 						avatar:
 							"https://game.gtimg.cn/images/yxzj/img201606/heroimg/501/501.jpg",
-					},
-					{
-						name: "杨玉环",
-						avatar:
-							"https://game.gtimg.cn/images/yxzj/img201606/heroimg/176/176.jpg",
 					},
 					{
 						name: "盾山",
@@ -849,6 +894,11 @@ module.exports = (app) => {
 						name: "鲁班大师",
 						avatar:
 							"https://game.gtimg.cn/images/yxzj/img201606/heroimg/525/525.jpg",
+					},
+					{
+						name: "阿古朵",
+						avatar:
+							"https://game.gtimg.cn/images/yxzj/img201606/heroimg/533/533.jpg",
 					},
 				],
 			},
@@ -887,6 +937,13 @@ module.exports = (app) => {
 					as: "heroList",
 				},
 			},
+      {
+        // 从上面lookup的数据中继续限制取出条件
+        // addFields  在查询的数据中添加一个字段
+        $addFields: {
+          heroesLimit: { $slice: ['$heroList', 5 ] }
+        }
+      }
 		]);
 		const subCats = cats.map((v) => v._id);
 		cats.unshift({
