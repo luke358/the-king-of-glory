@@ -4,7 +4,6 @@ import VueRouter from "vue-router";
 import Login from "./views/Login";
 
 import Main from "./views/Main";
-import Category from "./views/Category";
 import CategoryList from "./views/CategoryList";
 
 import ItemList from "./views/ItemList";
@@ -31,8 +30,6 @@ const routes = [
     path: "/",
     component: Main,
     children: [
-      { path: "/categories/create", component: Category },
-      { path: "/categories/edit/:id", component: Category, props: true },
       { path: "/categories/list", component: CategoryList },
 
       { path: "/items/list", component: ItemList },

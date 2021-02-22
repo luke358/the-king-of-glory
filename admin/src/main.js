@@ -3,6 +3,8 @@ import App from "./App.vue";
 import "./plugins/element.js";
 import router from "./router";
 
+import TreeTable from 'vue-table-with-tree-grid'
+
 import "./style.css";
 
 Vue.config.productionTip = false;
@@ -10,6 +12,9 @@ Vue.config.productionTip = false;
 import http from "./http";
 Vue.prototype.$http = http;
 
+Vue.component('tree-table', TreeTable)
+
+// 全局mixins
 Vue.mixin({
   computed: {
     uploadUrl() {

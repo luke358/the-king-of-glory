@@ -77,8 +77,12 @@ export default {
     // 获取全部分类
     async fetchCategories() {
       const res = await this.$http.get(`rest/categories`);
-      this.categories = res.data;
-      console.log(res.data)
+      for (let item of res.data) {
+        console.log(item);
+        if (item.name === '新闻分类') {
+          this.categories = item.child
+        }
+      }
     }
   },
   created() {

@@ -244,7 +244,6 @@ export default {
       const res = await this.$http.get(`rest/categories`);
 
       for (let item of res.data) {
-        console.log(item)
         if (item.name === '英雄分类') {
           this.categories = item.child
         }
